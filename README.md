@@ -1,5 +1,4 @@
-# frontend-guideline
-Best practices for frontend development
+# Best practices for frontend development
 
 CSS
 - Do not use universal selector. It's too risky.
