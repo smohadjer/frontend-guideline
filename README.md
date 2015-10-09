@@ -1,6 +1,7 @@
 # Best practices for frontend development
 
 CSS
+- You should be able to udnerstand what every single rule does and why it has been written by looking at CSS alone. 
 - Do not use universal selector. It's too risky.
 - To hide pseudo elements (:before, :after) use content: none; instead of display: none;
 - Avoid using "!important". If you use it, add a  comment to explain why you had to use it.
