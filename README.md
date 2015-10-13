@@ -1,6 +1,7 @@
 # Best practices for frontend development
 
 CSS
+- Avoid selectors that are too generic as they could have undesired effects. 
 - You should be able to udnerstand what every single rule does and why it has been written by looking at CSS alone. 
 - Do not use universal selector. It's too risky.
 - To hide pseudo elements (:before, :after) use content: none; instead of display: none;
