@@ -11,4 +11,4 @@ CSS
 - All css rules for a module should be name spaced to avoid affecting elements outside the module.
 
 JavaScript
-- Do not trigger UI events (click, scroll, etc) by script and instead call their event handler. There is no bullet-proof way to differentiate events triggered by user from those triggered by code, so if user actions are being tracked for analytics, triggering same event by code will result in false positive results. Also chances are there are handlers set in other code run in the same page for the event and you will unintentionally trigger those handlers. 
+- Do not trigger standard user interface events (click, scroll, ...) and instead invoke the handler set for those events. The are two reasons for this. One that there is no bullet-proof way to differentiate events triggered by user from those triggered by code, so if user actions are being tracked for analytics, triggering same event by code will produce wrong tracking data. Second reason is that chances are that handlers are set for these events by other scripts running in the same page which you don't want to invoke.
