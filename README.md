@@ -1,4 +1,4 @@
-# Best practices for frontend development
+#Front-end Tips
 
 ##CSS
 - Comment CSS rules (or collection of rules) that their purpose is not obvious.
