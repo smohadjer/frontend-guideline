@@ -12,4 +12,4 @@
 - Do not trigger standard user interface events (click, scroll, ...) and instead invoke the handler set for those events. There are two reasons for this. One that there is no bullet-proof way to differentiate events triggered by user from those triggered by code, so if user actions are being tracked for analytics, triggering same event by code will produce false positive results. Second reason is that chances are handlers are set for the same event by other scripts running in the same page which you don't want to invoke.
 
 ##HTML
-- Use data-camel-case rather than data-camelCase to name data attributes if the project uses jQuery. jQuery.data() chocks when parsing data-camcelCase attributes, hence breaking your code (e.g. https://jsfiddle.net/smohadjer/tua0v2x6/).
+- Use data-camel-case rather than data-camelCase to name data attributes if the project uses jQuery. jQuery.data() chocks when parsing data-camcelCase attributes, hence breaking your code (e.g. https://jsfiddle.net/smohadjer/tua0v2x6/4/).
