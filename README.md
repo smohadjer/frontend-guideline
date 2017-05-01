@@ -8,7 +8,7 @@
 - If you are using a css property for the first time, make sure you are aware of known issues in browsers you support (these issues are listed on caniuse.com). For example "box-sizing: border-box;" can cause issues in Internet Explorer 9.
 - All css rules for a module/component should be name spaced to avoid affecting elements outside that module/component.
 - To target the first x children of an element, use :nth-child(-n + x).
-- To remove hover underline from a:before set :before's display to [inline-block](http://stackoverflow.com/questions/8820286/how-to-remove-only-underline-from-abefore). 
+- To remove hover underline from a:before set a:before's display to [inline-block](http://stackoverflow.com/questions/8820286/how-to-remove-only-underline-from-abefore). 
 
 
 ##JavaScript/jQuery
