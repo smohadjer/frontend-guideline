@@ -20,3 +20,6 @@
 
 ## HTML
 - Use data-camel-case rather than data-camelCase to name data attributes if the project uses jQuery. jQuery.data() chocks when parsing data-camcelCase attributes, hence breaking your code ([see jsfiddle] (https://jsfiddle.net/smohadjer/tua0v2x6/4/)).
+
+## GIT
+- Do not delete a file and then add it to another folder in order to achieve move or do not rename folders. Use `git mv <old name> <new name>` command instead so it shows up as move/rename in git history.
