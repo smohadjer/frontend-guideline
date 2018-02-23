@@ -24,4 +24,4 @@
 ## Working on a project
 - Do not delete a file and then add it to another folder in order to achieve move or do not rename folders. Use `git mv <old name> <new name>` command instead so it shows up as move/rename in git history.
 - Use [semver versioning](https://semver.org/) to release patches, minor, and major revisions. Patches and minor releases should be backward compatible.
-
+- Add CHANGELOG.md to all repositories http://keepachangelog.com/en/1.0.0/
