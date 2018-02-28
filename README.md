@@ -22,6 +22,10 @@
 - Use data-camel-case rather than data-camelCase to name data attributes if the project uses jQuery. jQuery.data() chocks when parsing data-camcelCase attributes, hence breaking your code ([see jsfiddle] (https://jsfiddle.net/smohadjer/tua0v2x6/4/)).
 
 ## Working on a project
-- Do not delete a file and then add it to another folder in order to achieve move or do not rename folders. Use `git mv <old name> <new name>` command instead so it shows up as move/rename in git history.
+- Do not delete a file and then add it to another folder in order to achieve move or do not rename folders. Use `git mv <old name> <new name>` command instead so git history is preserved.
 - Use [semver versioning](https://semver.org/) to release patches, minor, and major revisions. Patches and minor releases should be backward compatible.
 - Add CHANGELOG.md to all repositories http://keepachangelog.com/en/1.0.0/
+
+## Git
+- To move multiple files to a folder you can use something like this: `git mv *.html mydestinationfolder/`
+- To rename extension of multiple files: `for i in *.php; do git mv "$i" "${i/.php}".html; done`
