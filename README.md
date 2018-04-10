@@ -29,3 +29,9 @@
 ## Git
 - To move multiple files to a folder you can use something like this: `git mv *.html mydestinationfolder/`
 - To rename extension of multiple files: `for i in *.php; do git mv "$i" "${i/.php}".html; done`
+
+## Build
+-  Syntax for using local dependency in package.json:  
+"dependencies": {
+    "bar": "file:../foo/bar"
+}
