@@ -48,10 +48,11 @@
   - If error still remains, edit "User" and "Group" properties in httpd.conf. Set User to your username (whoami in terminal) and Group to staff.
   - restart Apache
 
-- To get php working:
+- Setup PHP:
   - Uncomment line that loads php module (search for php in httpd.conf) and restart apache.
   - Find `ServerName` in httpd.conf and uncomment it and set it to `ServerName localhost:80`
-  - restart Apache
+  - To test php put `<?php phpinfo(); ?>` in a phpinfo.php file and save the file in root of your server.
+  - restart Apache and load phpinfo.php in browser: `http://localhost/phpinfo.php`
 
 - if you want to allow directory/file indexing, change `<directory>` that refers to your username to:
 ```
