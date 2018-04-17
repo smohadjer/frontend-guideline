@@ -37,3 +37,29 @@
 "dependencies": {
     "bar": "file:../foo/bar"
 }
+
+## Apache/PHP Setup on macOS High Sierra
+- Open /etc/apache2/httpd.conf in an editor. Use `cmd + shift + .` in Finder to unhide hidden files/folders.
+  - Change DocumentRoot to point to the folder you want to use as root of server.
+  - Restart apache from terminal using: `sudo apachectl -k restart`
+
+- If opening `http://localhost/` in browser shows forbidden error, then:
+  - Add an index.html to root of your web server.
+  - If error still remains, edit "User" and "Group" properties in httpd.conf. Set User to your username (whoami in terminal) and Group to staff.
+  - restart Apache
+
+- To get php working:
+  - Uncomment line that loads php module (search for php in httpd.conf) and restart apache.
+  - Find `ServerName` in httpd.conf and uncomment it and set it to `ServerName localhost:80`
+  - restart Apache
+
+- if you want to allow directory/file indexing, change `<directory>` that refers to your username to:
+```
+<Directory "/Users/sm/Documents">
+  Options Indexes FollowSymLinks Multiviews
+  MultiviewsMatch Any
+  AllowOverride All
+  Require all granted
+</Directory>
+```
+    
