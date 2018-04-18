@@ -54,13 +54,13 @@
   - To test php put `<?php phpinfo(); ?>` in a phpinfo.php file and save the file in root of your server.
   - restart Apache and load phpinfo.php in browser: `http://localhost/phpinfo.php`
 
-- if you want to allow directory/file indexing, change `<directory>` that refers to your username to:
+- if you want to allow directory/file indexing, update directives inside `<directory>` that refers to your username, for example:
 ```
 <Directory "/Users/sm/Documents">
   Options Indexes FollowSymLinks Multiviews
+  IndexOptions +FancyIndexing +FoldersFirst
   MultiviewsMatch Any
   AllowOverride All
   Require all granted
 </Directory>
-```
-    
+```    
