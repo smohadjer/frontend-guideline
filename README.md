@@ -31,6 +31,8 @@
 - To rename extension of multiple files: `for i in *.php; do git mv "$i" "${i/.php}".html; done`
 - To rewrite a tag that is pushed to remote first we delete the tag on remote using: `git push origin :refs/tags/<tagname>` and then replace the tag with most recent commit using: `git tag -f <tagname>` and then finally push the tag to remote using: `git push origin <tagname>`
 
+## Mac 
+- To change deafult working directory of Terminal, add `cd path/to/directory` to your `.bash_profile`. If you don't find this file in your home directory, simply create it.
 
 ## Build
 -  Syntax for using local dependency in package.json:  
