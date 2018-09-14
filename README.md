@@ -29,7 +29,7 @@
 - Add CHANGELOG.md to all repositories http://keepachangelog.com/en/1.0.0/
 
 ## Tools
-- [JSONJSONLint](https://jsonlint.com/)
+- [JSONLint](https://jsonlint.com/)
 
 ## Git
 - To move multiple files to a folder you can use something like this: `git mv *.html mydestinationfolder/`
