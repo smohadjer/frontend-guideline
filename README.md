@@ -28,6 +28,9 @@
 - Use [semver versioning](https://semver.org/) to release patches, minor, and major revisions. Patches and minor releases should be backward compatible.
 - Add CHANGELOG.md to all repositories http://keepachangelog.com/en/1.0.0/
 
+## Tools
+- [JSONJSONLint](https://jsonlint.com/)
+
 ## Git
 - To move multiple files to a folder you can use something like this: `git mv *.html mydestinationfolder/`
 - To rename extension of multiple files: `for i in *.php; do git mv "$i" "${i/.php}".html; done`
