@@ -21,7 +21,7 @@
 - Don't attach handlers to the window scroll event and instead use a timer (setInterval). For why read this: http://ejohn.org/blog/learning-from-twitter/
 
 ## HTML
-- Do not use data-camelCase when naming data attributes. Uppercase letters are not allowed in data attribute names and if the project uses jQuery, it will result in error ([see jsfiddle] (https://jsfiddle.net/smohadjer/tua0v2x6/4/)).
+- Do not use data-camelCase when naming data attributes. Uppercase letters are not allowed in data attribute names and if the project uses jQuery, it will result in error ([see jsfiddle](https://jsfiddle.net/smohadjer/tua0v2x6/4/)).
 
 ## Working on a project
 - Do not delete a file and then add it to another folder in order to achieve move or do not rename folders. Use `git mv <old name> <new name>` command instead so git history is preserved.
